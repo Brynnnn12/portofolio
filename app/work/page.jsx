@@ -108,7 +108,7 @@ const Projects = [
       "Ini adalah aplikasi course online yang dibangun dengan laravel dan alpinejs dan tailwind css. Aplikasi ini memungkinkan Anda untuk menambahkan, mengedit, dan menghapus course.",
     stack: [
       {
-        name: "laravel",
+        name: "Laravel",
       },
       {
         name: "AlpineJs",
@@ -123,7 +123,28 @@ const Projects = [
     image: "/assets/work/image5.png",
     live: "",
     github: "https://github.com/Brynnnn12/course-online",
+  },
+  {
+    num: "06",
+    category: "Front End",
+    title: "MusicWave",
+    description:
+      "Ini adalah aplikasi Musik yang dibangun dengan Next Js dan tailwind css.",
+    stack: [
+      
+      {
+        name: "Next Js",
+      },
+      {
+        name: "Tailwind CSS",
+      },
+      
+    ],
+    image: "/assets/work/image6.png",
+    live: "https://next-audio-player.vercel.app/",
+    github: "https://github.com/Brynnnn12/next-audio-player",
   }
+  
 
 ];
 
