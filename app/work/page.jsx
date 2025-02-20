@@ -97,9 +97,34 @@ const Projects = [
     
     ],
     image: "/assets/work/image4.png",
-    live: "",
+    live: "https://todo-next-app-blue.vercel.app/",
     github: "https://github.com/Brynnnn12/todo-next-app",
+  },
+  {
+    num: "05",
+    category: "Pengembangan Web",
+    title: "Course Online",
+    description:
+      "Ini adalah aplikasi course online yang dibangun dengan laravel dan alpinejs dan tailwind css. Aplikasi ini memungkinkan Anda untuk menambahkan, mengedit, dan menghapus course.",
+    stack: [
+      {
+        name: "laravel",
+      },
+      {
+        name: "AlpineJs",
+      },
+      {
+        name: "Tailwind CSS",
+      },
+      {
+        name: "Mysql",
+      },
+    ],
+    image: "/assets/work/image5.png",
+    live: "",
+    github: "https://github.com/Brynnnn12/course-online",
   }
+
 ];
 
 
