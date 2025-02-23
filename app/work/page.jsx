@@ -38,7 +38,7 @@ const Projects = [
     category: "Pengembangan Web",
     title: "Sistem Informasi Desa",
     description:
-    "Ini adalah proyek PKL yang dikembangkan di Balai Desa Purwosari. Sistem ini dirancang untuk membantu administrasi desa dalam pengelolaan data warga, surat-menyurat, dan layanan desa secara digital.",
+      "Ini adalah proyek PKL yang dikembangkan di Balai Desa Purwosari. Sistem ini dirancang untuk membantu administrasi desa dalam pengelolaan data warga, surat-menyurat, dan layanan desa secara digital.",
     stack: [
       {
         name: "Laravel",
@@ -51,7 +51,7 @@ const Projects = [
       },
       {
         name: "AlpineJs",
-      }
+      },
     ],
     image: "/assets/work/image2.png",
     live: "https://desa-psi.vercel.app/",
@@ -72,7 +72,7 @@ const Projects = [
       },
       {
         name: "MongoDB",
-      }
+      },
     ],
     image: "/assets/work/image3.png",
     live: "",
@@ -94,7 +94,6 @@ const Projects = [
       {
         name: "MongoDB",
       },
-    
     ],
     image: "/assets/work/image4.png",
     live: "https://todo-next-app-blue.vercel.app/",
@@ -131,24 +130,36 @@ const Projects = [
     description:
       "Ini adalah aplikasi Musik yang dibangun dengan Next Js dan tailwind css.",
     stack: [
-      
       {
         name: "Next Js",
       },
       {
         name: "Tailwind CSS",
       },
-      
     ],
     image: "/assets/work/image6.png",
     live: "https://next-audio-player.vercel.app/",
     github: "https://github.com/Brynnnn12/next-audio-player",
-  }
-  
-
+  },
+  {
+    num: "07",
+    category: "Front End",
+    title: "Sejarah Indonesia",
+    description:
+      "Aplikasi yang menampilkan sejarah Indonesia secara interaktif menggunakan Next.js dan Tailwind CSS.",
+    stack: [
+      {
+        name: "Next Js",
+      },
+      {
+        name: "Tailwind CSS",
+      },
+    ],
+    image: "/assets/work/image7.png",
+    live: "https://sejarah-indonesie.vercel.app/",
+    github: "https://github.com/Brynnnn12/web-sejarah",
+  },
 ];
-
-
 
 const Work = () => {
   const [project, setProject] = useState(Projects[0]);
