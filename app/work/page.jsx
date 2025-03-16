@@ -101,6 +101,30 @@ const Projects = [
   },
   {
     num: "05",
+    category: "MERN Stack",
+    title: "Artciles Web",
+    description:
+      "Ini adalah Website Artikel yang dibangun dengan MERN. Website ini menampilkan keterampilan, proyek, dan pengalaman saya.",
+    stack: [
+      {
+        name: "Mysql",
+      },
+      {
+        name: "Express Js",
+      },
+      {
+        name: "React Js",
+      },
+      {
+        name: "Node Js",
+      },
+    ],
+    image: "/assets/work/image8.png",
+    live: "https://articles-new.vercel.app/",
+    github: "https://github.com/Brynnnn12/client",
+  },
+  {
+    num: "06",
     category: "Pengembangan Web",
     title: "Course Online",
     description:
@@ -124,7 +148,7 @@ const Projects = [
     github: "https://github.com/Brynnnn12/course-online",
   },
   {
-    num: "06",
+    num: "07",
     category: "Front End",
     title: "MusicWave",
     description:

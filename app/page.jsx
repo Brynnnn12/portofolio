@@ -16,8 +16,8 @@ export default function Home() {
               <br /> <span className="text-accent">Bryan</span>
             </h1>
             <p className="text-white/80 max-w-[500px] mb-8">
-              Saya seorang mahasiswa freelance yang sedang menempuh pendidikan
-              di jurusan Sistem Informasi.
+              Saya seorang mahasiswa yang sedang menempuh pendidikan di jurusan
+              Sistem Informasi UBSI Tegal.
             </p>
 
             <div className=" flex flex-col xl:flex-row items-center gap-8">
