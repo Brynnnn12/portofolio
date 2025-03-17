@@ -166,7 +166,7 @@ const Projects = [
     github: "https://github.com/Brynnnn12/next-audio-player",
   },
   {
-    num: "07",
+    num: "08",
     category: "Front End",
     title: "Sejarah Indonesia",
     description:
