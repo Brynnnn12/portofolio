@@ -26,7 +26,15 @@ export default function Home() {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <span className="">Download Cv</span>
+                <a
+                  href="https://drive.google.com/file/d/1VClLDM6Zot0l8KXz7FSg9e2uDNZEYp21/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2  text-white rounded-md hover:bg-accent/90 transition"
+                >
+                  Download CV
+                </a>
+
                 <FiDownload className="text-xl" />
               </Button>
               <div className=" mb-8 xl:mb-0">

@@ -12,26 +12,32 @@ const Hobbies = () => {
       title: "Fotografi",
       description:
         "Menangkap momen indah dengan lensa kamera dan menciptakan kenangan abadi.",
-      icon: <SiAdobephotoshop className="text-4xl text-black group-hover:text-black transition-all" />,
+      icon: (
+        <SiAdobephotoshop className="text-4xl text-black group-hover:text-black transition-all" />
+      ),
     },
     {
       num: "02",
       title: "Sepak Bola",
       description:
         "Menikmati permainan yang penuh strategi dan kebersamaan di lapangan hijau.",
-      icon: <FaFootballBall className="text-4xl text-black group-hover:text-black transition-all" />,
+      icon: (
+        <FaFootballBall className="text-4xl text-black group-hover:text-black transition-all" />
+      ),
     },
     {
       num: "03",
       title: "Membaca Buku Sejarah",
       description:
         "Menambah wawasan dengan memahami perjalanan sejarah dunia dan peradaban manusia.",
-      icon: <FaBookOpen className="text-4xl text-black group-hover:text-black transition-all" />,
+      icon: (
+        <FaBookOpen className="text-4xl text-black group-hover:text-black transition-all" />
+      ),
     },
   ];
 
   return (
-    <section className="min-h-[80vh] flex flex-col justify-center mb-6 px-10 py-12 xl:py-0 bg-gray-900">
+    <section className="min-h-[80vh] flex flex-col justify-center mb-6 px-10 py-12 xl:py-8 bg-gray-900">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0 }}
