@@ -183,6 +183,30 @@ const Projects = [
     live: "https://sejarah-indonesie.vercel.app/",
     github: "https://github.com/Brynnnn12/web-sejarah",
   },
+  {
+    num: "09",
+    category: "MERN Stack",
+    title: "Book Store",
+    description:
+      "Ini adalah Website Book Store yang dibangun dengan MERN. Website ini menampilkan keterampilan, proyek, dan pengalaman saya.",
+    stack: [
+      {
+        name: "MongoDb",
+      },
+      {
+        name: "Express Js",
+      },
+      {
+        name: "React Js",
+      },
+      {
+        name: "Node Js",
+      },
+    ],
+    image: "/assets/work/image9.png",
+    live: "https://book-store-shop.vercel.app/",
+    github: "https://github.com/Brynnnn12/book-store",
+  },
 ];
 
 const Work = () => {
