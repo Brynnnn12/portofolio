@@ -13,6 +13,9 @@ const jetBrainsMono = JetBrains_Mono({
 export const metadata = {
   title: "Brynnnn12",
   description: "My Portofolio",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
