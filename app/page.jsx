@@ -22,8 +22,7 @@ export default function Home() {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Mahasiswa</span>
             <h1 className="h1 mb-6">
-              Hello I'm
-              <br /> <span className="text-accent">Bryan</span>
+              Hi, I'm <span className="text-accent">Bryan</span>
             </h1>
             <p className="text-white/80 max-w-[500px] mb-8">
               Saya adalah mahasiswa yang sedang menempuh pendidikan di Jurusan

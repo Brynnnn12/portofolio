@@ -47,7 +47,7 @@ const about = {
     },
     {
       fieldName: "Alamat",
-      fieldValue: "Pemalang, Indonesia",
+      fieldValue: "Indonesia",
     },
     {
       fieldName: "Email",
@@ -59,17 +59,17 @@ const about = {
 const experience = {
   icon: "../../public/assets/resume/badge.svg",
   title: "Pengalaman",
-  description: `Saya adalah mahasiswa Sistem Informasi di UBSI Tegal yang memiliki minat besar dalam pengembangan web dan keamanan siber. Fokus utama saya saat ini adalah pada pengembangan backend menggunakan Express.js, Laravel, serta eksplorasi teknologi seperti TALL Stack dan MERN Stack. Selain itu, saya juga mendalami bidang Cyber Security, khususnya Web Application Security, Penetration Testing, dan Red Team Operations. Saya aktif mengembangkan berbagai proyek dan terus belajar teknologi terbaru untuk mengasah kemampuan teknis saya.`,
+  description: `Saya memiliki pengalaman praktis dalam pengembangan web dan pelayanan publik melalui magang di Balai Desa Purwosari. Selama magang, saya terlibat langsung dalam membantu pelayanan masyarakat dan mengembangkan sistem informasi desa menggunakan teknologi modern. Selain itu, saya juga aktif mengembangkan keterampilan melalui proyek-proyek pribadi menggunakan berbagai tech stack seperti MERN dan TALL.`,
   items: [
     {
-      company: "Proyek Sistem Informasi Desa",
-      position: "Pengembang Backend (Laravel & Tailwind CSS)",
+      company: "Balai Desa Purwosari, Comal, Pemalang",
+      position: "Magang - Pelayanan Publik & Web Developer",
       duration: "2024",
     },
     {
-      company: "Proyek Portofolio Pribadi",
-      position: "Pengembang Web (Next.js & Tailwind CSS)",
-      duration: "2022",
+      company: "Proyek Sistem Informasi Desa",
+      position: "Pengembang Web (Laravel, Alpine.js & Tailwind CSS)",
+      duration: "2024",
     },
   ],
 };
