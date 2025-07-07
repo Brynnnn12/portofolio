@@ -2,7 +2,7 @@
 
 import { BsArrowDownRight } from "react-icons/bs";
 import { motion } from "framer-motion";
-import { FaFootballBall, FaBookOpen } from "react-icons/fa";
+import { FaFootballBall, FaBookOpen, FaGamepad } from "react-icons/fa";
 import { SiAdobephotoshop } from "react-icons/si";
 
 const Hobbies = () => {
@@ -32,6 +32,15 @@ const Hobbies = () => {
         "Menambah wawasan dengan memahami perjalanan sejarah dunia dan peradaban manusia.",
       icon: (
         <FaBookOpen className="text-4xl text-black group-hover:text-black transition-all" />
+      ),
+    },
+    {
+      num: "04",
+      title: "Bermain Game",
+      description:
+        "Menikmati dunia virtual dan mengasah kemampuan strategi serta reflex melalui berbagai genre game.",
+      icon: (
+        <FaGamepad className="text-4xl text-black group-hover:text-black transition-all" />
       ),
     },
   ];
