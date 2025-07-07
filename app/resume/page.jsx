@@ -5,11 +5,19 @@ import { FaHtml5, FaCss3, FaJs } from "react-icons/fa";
 
 import {
   SiTailwindcss,
+  SiReact,
   SiNextdotjs,
   SiExpress,
   SiLaravel,
-  SiReact,
+  SiMysql,
+  SiMongodb,
+  SiNodedotjs,
+  SiGithub,
+  SiKalilinux,
+  SiBurpsuite,
+  SiWireshark,
 } from "react-icons/si";
+import { GiSpiderWeb } from "react-icons/gi";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -97,42 +105,25 @@ const education = {
 };
 
 const skills = {
-  title: "Keahlian Saya",
-  description: `Saya sedang belajar pengembangan web dengan fokus pada Next.js, Express.js, dan Laravel. 
-  Saya memiliki pemahaman dasar tentang cara kerja framework tersebut dan terus berlatih untuk meningkatkan keterampilan saya dalam pengembangan web.`,
+  title: "Teknologi yang Sedang Saya Pelajari",
+  description: `Saya sedang fokus mendalami pengembangan backend menggunakan Express.js untuk membangun RESTful API, serta membangun antarmuka frontend menggunakan React dan Next.js. Selain pengembangan web, saya juga memiliki minat khusus di bidang Cyber Security, terutama pada keamanan aplikasi web, penetration testing, dan eksplorasi kerentanan. Saya terus mengembangkan keterampilan melalui berbagai proyek dan eksplorasi tools keamanan modern.`,
   skillList: [
-    {
-      icon: <FaHtml5 />,
-      title: "HTML",
-    },
-    {
-      icon: <FaCss3 />,
-      title: "CSS",
-    },
-    {
-      icon: <FaJs />,
-      title: "JavaScript",
-    },
-    {
-      icon: <SiTailwindcss />,
-      title: "Tailwind CSS",
-    },
-    {
-      icon: <SiReact />,
-      title: "React JS",
-    },
-    {
-      icon: <SiNextdotjs />,
-      title: "Next JS",
-    },
-    {
-      icon: <SiExpress />,
-      title: "Express JS",
-    },
-    {
-      icon: <SiLaravel />,
-      title: "Laravel",
-    },
+    { icon: <FaHtml5 />, title: "HTML" },
+    { icon: <FaCss3 />, title: "CSS" },
+    { icon: <FaJs />, title: "JavaScript" },
+    { icon: <SiTailwindcss />, title: "Tailwind CSS" },
+    { icon: <SiReact />, title: "React JS" },
+    { icon: <SiNextdotjs />, title: "Next JS" },
+    { icon: <SiExpress />, title: "Express JS" },
+    { icon: <SiLaravel />, title: "Laravel" },
+    { icon: <SiMysql />, title: "MySQL" },
+    { icon: <SiMongodb />, title: "MongoDB" },
+    { icon: <SiNodedotjs />, title: "Node.js" },
+    { icon: <SiGithub />, title: "Git & GitHub" },
+    { icon: <SiKalilinux />, title: "Kali Linux" },
+    { icon: <SiBurpsuite />, title: "Burp Suite" },
+    { icon: <GiSpiderWeb />, title: "Nmap" },
+    { icon: <SiWireshark />, title: "Wireshark" },
   ],
 };
 
