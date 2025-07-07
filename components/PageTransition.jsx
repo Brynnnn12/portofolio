@@ -14,16 +14,16 @@ const PageTransition = ({ children }) => {
           initial={{ opacity: 1 }}
           animate={{ opacity: 0 }}
           exit={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.4, ease: "easeIn" }}
+          transition={{ delay: 1.0, duration: 0.3, ease: "easeInOut" }}
           className="h-screen w-screen fixed bg-primary pointer-events-none top-0"
         />
-        
+
         {/* Animasi konten halaman */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.4, ease: "easeInOut" }}
+          transition={{ delay: 1.0, duration: 0.4, ease: "easeInOut" }}
         >
           {children}
         </motion.div>

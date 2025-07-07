@@ -26,7 +26,8 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 const about = {
   title: "Tentang Saya",
-  description: `Saya adalah seorang mahasiswa Sistem Informasi yang juga bekerja sebagai freelancer. Saya memiliki minat besar dalam pengembangan web, khususnya di bidang front-end. Saya menguasai HTML, CSS, JavaScript, dan React, serta terus belajar teknologi terbaru untuk meningkatkan keterampilan saya.`,
+  description: `Saya adalah mahasiswa Sistem Informasi di UBSI Tegal dan memiliki minat besar dalam bidang Cyber Security dan pengembangan backend. Saya fokus mempelajari Laravel (TALL Stack), Express.js (MERN Stack), dan keamanan aplikasi web, termasuk Penetration Testing dan Red Team. Saya senang belajar secara mandiri dan aktif mengembangkan berbagai proyek untuk meningkatkan keterampilan teknis saya.`,
+
   info: [
     {
       fieldName: "Nama",
@@ -36,7 +37,6 @@ const about = {
       fieldName: "Telepon",
       fieldValue: "(+62) 851 5070 4897",
     },
-
     {
       fieldName: "Alamat",
       fieldValue: "Pemalang, Indonesia",
@@ -45,22 +45,17 @@ const about = {
       fieldName: "Email",
       fieldValue: "bryankurniaakbar12@gmail.com",
     },
-
-    {
-      fieldName: "Freelance",
-      fieldValue: "Tersedia",
-    },
   ],
 };
 
 const experience = {
   icon: "../../public/assets/resume/badge.svg",
   title: "Pengalaman",
-  description: `Saya adalah seorang mahasiswa Sistem Informasi yang memiliki minat besar dalam pengembangan web, khususnya di bidang front-end. Saya memiliki keterampilan dalam HTML, CSS, JavaScript,  NextJs, ExpressJs Dan Laravel serta pengalaman dalam mengembangkan proyek menggunakan Laravel dan Tailwind CSS. Saya selalu berusaha untuk belajar teknologi terbaru dan mengasah kemampuan melalui berbagai proyek serta kegiatan akademik.`,
+  description: `Saya adalah mahasiswa Sistem Informasi di UBSI Tegal yang memiliki minat besar dalam pengembangan web dan keamanan siber. Fokus utama saya saat ini adalah pada pengembangan backend menggunakan Express.js, Laravel, serta eksplorasi teknologi seperti TALL Stack dan MERN Stack. Selain itu, saya juga mendalami bidang Cyber Security, khususnya Web Application Security, Penetration Testing, dan Red Team Operations. Saya aktif mengembangkan berbagai proyek dan terus belajar teknologi terbaru untuk mengasah kemampuan teknis saya.`,
   items: [
     {
       company: "Proyek Sistem Informasi Desa",
-      position: "Pengembang Web (Laravel & Tailwind CSS)",
+      position: "Pengembang Backend (Laravel & Tailwind CSS)",
       duration: "2024",
     },
     {

@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import MobileNav from "./MobileNav";
 
 const Header = () => {
-  const phone = "(+62) 851 5070 4897";
+  const phone = "6285150704897";
   const message = "Hi, I'm Bryan Kurnia Akbar";
   return (
     <header className="py-4 xl:py-6 text-white">

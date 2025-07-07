@@ -15,28 +15,28 @@ const StairTransition = () => {
         initial={{ opacity: 1 }}
         animate={{ opacity: 0 }}
         exit={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 0.4, ease: "easeInOut" }}
+        transition={{ delay: 1.0, duration: 0.3, ease: "easeInOut" }}
       >
         <div className="flex flex-col items-center">
           <motion.div
             initial={{ scale: 1, opacity: 1 }}
-            animate={{ scale: [1, 1.2, 1], opacity: [1, 0.8, 1] }}
+            animate={{ scale: [1, 1.1, 1], opacity: [1, 0.9, 1] }}
             transition={{
               repeat: Infinity,
-              duration: 0.6,
+              duration: 0.5,
               ease: "easeInOut",
             }}
           >
-            <HashLoader color="#36d7b7" size={60} />
+            <HashLoader color="#36d7b7" size={50} />
           </motion.div>
 
           <motion.div
-            className="w-16 h-4 bg-black/30 rounded-full mt-4"
+            className="w-12 h-3 bg-black/30 rounded-full mt-3"
             initial={{ scaleX: 1, opacity: 0.5 }}
-            animate={{ scaleX: [1, 0.6, 1], opacity: [0.5, 0.2, 0.5] }}
+            animate={{ scaleX: [1, 0.7, 1], opacity: [0.5, 0.3, 0.5] }}
             transition={{
               repeat: Infinity,
-              duration: 0.8,
+              duration: 0.7,
               ease: "easeInOut",
             }}
           />
