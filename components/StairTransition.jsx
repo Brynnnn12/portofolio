@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { HashLoader } from "react-spinners";
+import { RingLoader } from "react-spinners";
 
 const StairTransition = () => {
   const path = usePathname();
@@ -23,11 +23,11 @@ const StairTransition = () => {
             animate={{ scale: [1, 1.1, 1], opacity: [1, 0.9, 1] }}
             transition={{
               repeat: Infinity,
-              duration: 0.5,
+              duration: 0.8,
               ease: "easeInOut",
             }}
           >
-            <HashLoader color="#36d7b7" size={50} />
+            <RingLoader color="#36d7b7" size={50} />
           </motion.div>
 
           <motion.div

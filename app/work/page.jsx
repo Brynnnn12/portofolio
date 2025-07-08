@@ -102,7 +102,7 @@ const Projects = [
   {
     num: "05",
     category: "MERN Stack",
-    title: "Artciles Web",
+    title: "Articles Web",
     description:
       "Ini adalah Website Artikel yang dibangun dengan MERN. Website ini menampilkan keterampilan, proyek, dan pengalaman saya.",
     stack: [
