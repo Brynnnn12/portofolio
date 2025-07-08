@@ -15,7 +15,7 @@ const StairTransition = () => {
         initial={{ opacity: 1 }}
         animate={{ opacity: 0 }}
         exit={{ opacity: 1 }}
-        transition={{ delay: 1.0, duration: 0.3, ease: "easeInOut" }}
+        transition={{ delay: 0.5, duration: 0.2, ease: "easeInOut" }}
       >
         <div className="flex flex-col items-center">
           <motion.div

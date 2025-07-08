@@ -13,7 +13,7 @@ export default function Home() {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 1.2, duration: 0.6, ease: "easeInOut" },
+        transition: { delay: 0.6, duration: 0.5, ease: "easeInOut" },
       }}
       className="h-full mb-10"
     >

@@ -18,7 +18,7 @@ const Stats = () => {
           animate={{
             opacity: 1,
             y: 0,
-            transition: { delay: 1.2, duration: 0.6, ease: "easeInOut" },
+            transition: { delay: 0.8, duration: 0.5, ease: "easeInOut" },
           }}
           className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6 max-w-4xl mx-auto"
         >
@@ -31,7 +31,7 @@ const Stats = () => {
                 <Countup
                   end={item.num}
                   duration={5}
-                  delay={3}
+                  delay={1.5}
                   className="text-3xl md:text-4xl xl:text-5xl font-extrabold text-accent mb-2"
                 />
                 <p className="text-sm md:text-base text-white/80 leading-tight">

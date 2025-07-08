@@ -6,6 +6,7 @@ import { DialogTitle } from "@radix-ui/react-dialog";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
+import { motion } from "framer-motion";
 
 const links = [
   { name: "Home", path: "/" },
@@ -16,47 +17,78 @@ const links = [
 
 const MobileNav = () => {
   const pathname = usePathname();
-  const [open, setOpen] = useState(false); // Tambahkan state untuk kontrol open/close
+  const [open, setOpen] = useState(false);
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
-      {/* Tombol Menu */}
       <SheetTrigger className="flex justify-center items-center">
-        <CiMenuFries className="text-[32px] text-accent" />
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+        >
+          <CiMenuFries className="text-2xl text-accent" />
+        </motion.div>
       </SheetTrigger>
 
-      {/* Konten Navigasi */}
-      <SheetContent side="right" className="flex flex-col items-center">
+      <SheetContent side="right" className="flex flex-col">
         <DialogTitle className="sr-only">Mobile Navigation</DialogTitle>
 
         {/* Logo */}
-        <div className="mt-16 mb-4 text-2xl text-center">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="mt-8 mb-8 text-center"
+        >
           <Link
             href="/"
-            className="text-4xl font-semibold"
+            className="text-3xl font-bold tracking-tight"
             onClick={() => setOpen(false)}
           >
-            Bryan <span className="text-accent">.</span>
+            Bryan<span className="text-accent">.</span>
           </Link>
-        </div>
+        </motion.div>
 
-        {/* Menu Navigasi */}
-        <nav className="flex flex-col gap-4 text-lg">
+        {/* Navigation Menu */}
+        <nav className="flex flex-col gap-1">
           {links.map((link, index) => (
-            <Link
+            <motion.div
               key={index}
-              href={link.path}
-              onClick={() => setOpen(false)} // Tutup sheet saat link diklik
-              className={`px-6 py-2 flex items-center group transition-all duration-300 ${
-                pathname === link.path
-                  ? "text-accent border-b-2 border-accent"
-                  : "hover:text-accent"
-              }`}
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.1 + index * 0.1 }}
             >
-              {link.name}
-            </Link>
+              <Link
+                href={link.path}
+                onClick={() => setOpen(false)}
+                className={`px-4 py-3 flex items-center rounded-lg transition-all duration-300 ${
+                  pathname === link.path
+                    ? "bg-accent/10 text-accent font-medium"
+                    : "hover:bg-gray-700 dark:hover:bg-gray-800"
+                }`}
+              >
+                <span className="relative">
+                  {link.name}
+                  {pathname === link.path && (
+                    <motion.span
+                      layoutId="mobileNavActive"
+                      className="absolute left-0 bottom-0 w-full h-0.5 bg-accent"
+                      transition={{
+                        type: "spring",
+                        bounce: 0.2,
+                        duration: 0.6,
+                      }}
+                    />
+                  )}
+                </span>
+              </Link>
+            </motion.div>
           ))}
         </nav>
+
+        {/* Footer/Extra Space */}
+        <div className="flex-1"></div>
       </SheetContent>
     </Sheet>
   );

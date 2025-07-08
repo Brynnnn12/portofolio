@@ -52,7 +52,7 @@ const Hobbies = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 1.2, duration: 0.8, ease: "easeInOut" },
+            transition: { delay: 0.6, duration: 0.6, ease: "easeInOut" },
           }}
           className="grid grid-cols-1 md:grid-cols-2 gap-16"
         >
