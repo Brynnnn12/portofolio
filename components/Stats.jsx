@@ -3,10 +3,10 @@ import Countup from "react-countup";
 import { motion } from "framer-motion";
 
 const stats = [
-  { num: 29, text: "Personal Projects" },
-  { num: 2, text: "Security Labs" },
-  { num: 190, text: "Learning Hours" },
-  { num: 7000, text: "Lines of Code" },
+  { num: 110, text: "GitHub Repositories" },
+  { num: 4, text: "Vulnerabilities Discovered" },
+  { num: 10, text: "OWASP Top 10 Covered" },
+  { num: 500, text: "Learning Hours" },
 ];
 
 const Stats = () => {
