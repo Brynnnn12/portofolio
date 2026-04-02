@@ -18,7 +18,7 @@ import { motion } from "framer-motion";
 const info = [
   {
     icon: <FaPhoneAlt />, 
-    title: "Telepon", 
+    title: "Phone", 
     description: "(+62) 851 5070 4897",
   },
   {
@@ -28,8 +28,8 @@ const info = [
   },
   {
     icon: <FaMapMarkerAlt />, 
-    title: "Alamat", 
-    description: "Comal, Pemalang, Jawa Tengah",
+    title: "Address", 
+    description: "Indonesia",
   },
 ];
 
@@ -50,32 +50,33 @@ const Contact = () => {
               action=""
               className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
             >
-              <h3 className="text-4xl text-accent">Mari Bekerja Sama</h3>
+              <h3 className="text-4xl text-accent">Let's Work Together</h3>
               <p className="text-white/60">
-                Silakan isi formulir di bawah ini untuk menghubungi kami dan 
-                mendiskusikan proyek yang Anda butuhkan.
+                Please fill out the form below to contact me and discuss any opportunities or projects.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="text" placeholder="Nama Depan" />
-                <Input type="text" placeholder="Nama Belakang" />
+                <Input type="text" placeholder="First Name" />
+                <Input type="text" placeholder="Last Name" />
                 <Input type="email" placeholder="Email" />
-                <Input type="phone" placeholder="Nomor Telepon" />
+                <Input type="phone" placeholder="Phone Number" />
               </div>
               <Select>
                 <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Pilih layanan" />
+                  <SelectValue placeholder="Select Service" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    <SelectLabel>Layanan</SelectLabel>
-                    <SelectItem value="web">Pengembangan Web</SelectItem>
+                    <SelectLabel>Services</SelectLabel>
+                    <SelectItem value="web">Web Development</SelectItem>
                     <SelectItem value="uiux">UI/UX</SelectItem>
-                    <SelectItem value="logo">Desain Logo</SelectItem>
+                    <SelectItem value="logo">Logo Design</SelectItem>
+                    <SelectItem value="pentest">Penetration Testing</SelectItem>
+                    <SelectItem value="backend">Backend Development</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
-              <Textarea className="h-[200px]" placeholder="Pesan" />
-              <Button size="md" className="max-w-40">Kirim Pesan</Button>
+              <Textarea className="h-[200px]" placeholder="Message" />
+              <Button size="md" className="max-w-40">Send Message</Button>
             </form>
           </div>
           <div className="flex-1 flex items-center xl:order-none mb-8 xl:mb-0">

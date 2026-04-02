@@ -1,6 +1,5 @@
 "use client";
 
-import { BsArrowDownRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { FaFootballBall, FaBookOpen, FaGamepad } from "react-icons/fa";
 import { SiAdobephotoshop } from "react-icons/si";
@@ -9,40 +8,51 @@ const Hobbies = () => {
   const hobbies = [
     {
       num: "01",
-      title: "Fotografi",
+      title: "Photography",
       description:
-        "Menangkap momen indah dengan lensa kamera dan menciptakan kenangan abadi.",
+        "Capturing beautiful moments with a camera lens and creating lasting memories.",
       icon: (
         <SiAdobephotoshop className="text-4xl text-black group-hover:text-black transition-all" />
       ),
     },
     {
       num: "02",
-      title: "Sepak Bola",
+      title: "Football",
       description:
-        "Menikmati permainan yang penuh strategi dan kebersamaan di lapangan hijau.",
+        "Enjoying a game full of strategy and camaraderie on the green field.",
       icon: (
         <FaFootballBall className="text-4xl text-black group-hover:text-black transition-all" />
       ),
     },
     {
       num: "03",
-      title: "Membaca Buku Sejarah",
+      title: "Reading History Books",
       description:
-        "Menambah wawasan dengan memahami perjalanan sejarah dunia dan peradaban manusia.",
+        "Expanding knowledge by understanding the journey of world history and human civilization.",
       icon: (
         <FaBookOpen className="text-4xl text-black group-hover:text-black transition-all" />
       ),
     },
     {
       num: "04",
-      title: "Bermain Game",
+      title: "Playing Games",
       description:
-        "Menikmati dunia virtual dan mengasah kemampuan strategi serta reflex melalui berbagai genre game.",
+        "Enjoying the virtual world and sharpening strategy and reflex skills through various game genres.",
       icon: (
         <FaGamepad className="text-4xl text-black group-hover:text-black transition-all" />
       ),
     },
+    //coding
+    {
+      num: "05",
+      title: "Coding",
+      description:
+        "Developing applications and websites using various programming languages.",
+      icon: (
+        <SiAdobephotoshop className="text-4xl text-black group-hover:text-black transition-all" />
+      ),
+
+    }
   ];
 
   return (

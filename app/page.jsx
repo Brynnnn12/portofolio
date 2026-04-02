@@ -20,16 +20,12 @@ export default function Home() {
       <div className="container mx-auto ">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-2 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Mahasiswa</span>
+            <span className="text-xl">Cyber Security Enthusiast</span>
             <h1 className="h1 mb-6">
               Hi, I'm <span className="text-accent">Bryan</span>
             </h1>
             <p className="text-white/80 max-w-[500px] mb-8">
-              Saya adalah mahasiswa yang sedang menempuh pendidikan di Jurusan
-              Sistem Informasi, Universitas Bina Sarana Informatika (UBSI)
-              Tegal. Saat ini saya sedang fokus belajar di bidang Backend
-              Development dan Cyber Security, khususnya dalam keamanan aplikasi
-              web, penetration testing, dan red team operations.
+              I am a fresh graduate from Diploma 3 in Information Systems and currently pursuing my Bachelor's degree at Universitas Bina Sarana Informatika (UBSI). I am focusing on Cyber Security, especially penetration testing, and have a strong interest in backend development.
             </p>
 
             <div className=" flex flex-col xl:flex-row items-center gap-8">
@@ -39,7 +35,7 @@ export default function Home() {
                 className="uppercase flex items-center gap-2"
               >
                 <a
-                  href="https://drive.google.com/file/d/122JdWrdp8AiSkw1Fwhxs6EfVAjgzf3wj/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1PU_qmIqsmTUJ2KFahkpanag0anL3glFs/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2  text-white rounded-md hover:bg-accent/90 transition"
