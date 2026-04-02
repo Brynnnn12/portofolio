@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaFootballBall, FaBookOpen, FaGamepad } from "react-icons/fa";
-import { SiAdobephotoshop } from "react-icons/si";
+import { FaFootballBall, FaBookOpen, FaGamepad, FaCode, FaCamera } from "react-icons/fa";
 
 const Hobbies = () => {
   const hobbies = [
@@ -12,7 +11,7 @@ const Hobbies = () => {
       description:
         "Capturing beautiful moments with a camera lens and creating lasting memories.",
       icon: (
-        <SiAdobephotoshop className="text-4xl text-black group-hover:text-black transition-all" />
+        <FaCamera className="text-4xl text-black group-hover:text-black transition-all" />
       ),
     },
     {
@@ -49,7 +48,7 @@ const Hobbies = () => {
       description:
         "Developing applications and websites using various programming languages.",
       icon: (
-        <SiAdobephotoshop className="text-4xl text-black group-hover:text-black transition-all" />
+        <FaCode className="text-4xl text-black group-hover:text-black transition-all" />
       ),
 
     }

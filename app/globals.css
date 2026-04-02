@@ -1,28 +1,42 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+/* Konfigurasi Tema untuk Tailwind v4 */
+@theme {
+  --font-primary: var(--font-jetbrainsMono), monospace;
+  
+  --color-primary: #1c1c22;
+  --color-accent: #00ff99;
+  --color-accent-foreground: #00e187;
 
-@layer base {
-  body{
-    @apply font-primary bg-primary text-white leading-loose ;
-  }
-  .h1{
-    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
-  }
-  .h2{
-    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
-  }
-  .h3{
-    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
-  }
-  .text-outline{
-    -webkit-text-stroke: 1px #fff;
-  }
-  
-  .text-outline-hover{
-    -webkit-text-stroke: 1px #00ff99;
-  }
-  
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 960px;
+  --breakpoint-xl: 1200px;
 }
 
+@layer base {
+  body {
+    /* Sekarang 'font-primary' dan 'bg-primary' sudah dikenali */
+    @apply font-primary bg-primary text-white leading-loose;
+  }
+  
+  .h1 {
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+  }
+  
+  .h2 {
+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+  }
+  
+  .h3 {
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+
+  .text-outline {
+    -webkit-text-stroke: 1px #fff;
+  }
+
+  .text-outline-hover {
+    -webkit-text-stroke: 1px #00ff99;
+  }
+}

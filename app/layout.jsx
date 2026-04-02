@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
+import SuspenseWrapper from "@/components/SuspenseWrapper";
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -16,6 +17,7 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  variable: "--font-jetBrainsMono",
 };
 
 export default function RootLayout({ children }) {
@@ -24,7 +26,9 @@ export default function RootLayout({ children }) {
       <body className={jetBrainsMono.variable}>
         <StairTransition />
         <Header />
-        <PageTransition>{children}</PageTransition>
+        <SuspenseWrapper>
+          <PageTransition>{children}</PageTransition>
+        </SuspenseWrapper>
       </body>
     </html>
   );
