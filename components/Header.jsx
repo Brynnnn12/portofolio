@@ -7,7 +7,7 @@ const Header = () => {
   const phone = "6285150704897";
   const message = "Hi, I'm Bryan Kurnia Akbar";
   return (
-    <header className="py-4 xl:py-6 text-white">
+    <header className="py-4 xl:py-6 px-6 md:px-2  text-white">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
           <h1 className="text-4xl font-semibold">

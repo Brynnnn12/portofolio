@@ -46,7 +46,7 @@ const MobileNav = () => {
             className="text-3xl font-bold tracking-tight"
             onClick={() => setOpen(false)}
           >
-            Bryan<span className="text-accent">.</span>
+            Brynnnn12<span className="text-accent">.</span>
           </Link>
         </motion.div>
 

@@ -24,7 +24,7 @@ export default function Home() {
             <h1 className="h1 mb-6">
               Hi, I'm <span className="text-accent">Bryan</span>
             </h1>
-            <p className="text-white/80 max-w-[500px] mb-8">
+            <p className="text-white/80 max-w-[500px] mb-8 px-4 xl:px-0">
               I am a fresh graduate from Diploma 3 in Information Systems and currently pursuing my Bachelor's degree at Universitas Bina Sarana Informatika (UBSI). I am focusing on Cyber Security, especially penetration testing, and have a strong interest in backend development.
             </p>
 
