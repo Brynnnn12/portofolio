@@ -8,8 +8,19 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+import Loading from "./loading";
 
 const Work = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 1200);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) return <Loading />;
+
   return (
     <motion.section
       initial={{ opacity: 0 }}

@@ -2,8 +2,16 @@
 
 import { motion } from "framer-motion";
 import { FaFootballBall, FaBookOpen, FaGamepad, FaCode, FaCamera } from "react-icons/fa";
+import { useState, useEffect } from "react";
+import Loading from "./loading";
 
 const Hobbies = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 1200);
+    return () => clearTimeout(timer);
+  }, []);
   const hobbies = [
     {
       num: "01",
@@ -53,6 +61,8 @@ const Hobbies = () => {
 
     }
   ];
+
+  if (isLoading) return <Loading />;
 
   return (
     <section className="min-h-[80vh] flex flex-col justify-center mb-6 px-10 py-12 xl:py-8 bg-gray-900">

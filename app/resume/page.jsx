@@ -29,6 +29,8 @@ import {
 import { motion } from "framer-motion";
 
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { useState, useEffect } from "react";
+import Loading from "./loading";
 
 const about = {
   title: "About Me",
@@ -95,6 +97,15 @@ const skills = {
 };
 
 const Resume = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 1200);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) return <Loading />;
+
   return (
     <motion.div
       initial={{ opacity: 0 }}

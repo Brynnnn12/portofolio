@@ -6,8 +6,19 @@ import { motion } from "framer-motion";
 
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+import { useState, useEffect } from "react";
+import Loading from "./loading";
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 1200);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) return <Loading />;
+
   return (
     <motion.section
       initial={{ opacity: 0 }}

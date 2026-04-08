@@ -14,6 +14,8 @@ import {
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import Loading from "./loading";
 
 const info = [
   {
@@ -34,6 +36,15 @@ const info = [
 ];
 
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 1200);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) return <Loading />;
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
